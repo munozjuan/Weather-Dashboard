@@ -1,13 +1,13 @@
-// Global variable declarations
+// Global variable
 var cityList = [];
 var cityname;
 
-// local storage functions
+// localstorage 
 initCityList();
 initWeather();
 
 
-// This function displays the city entered by the user into the DOM
+// Function displays city entered by the user into the DOM
 function renderCities(){
     $("#cityList").empty();
     $("#cityInput").val("");
@@ -21,7 +21,7 @@ function renderCities(){
     } 
 }
 
-// This function pulls the city list array from local storage
+// Function pulls the city list array from localstorage / clears storage
 function initCityList() {
     var storedCities = JSON.parse(localStorage.getItem("cities"));
     
@@ -30,9 +30,10 @@ function initCityList() {
     }
     
     renderCities();
+    localStorage.clear();
     }
 
-// This function pull the current city into local storage to display the current weather forecast on reload
+// Function pull the current city into localstorage to display the current weather forecast on reload
 function initWeather() {
     var storedWeather = JSON.parse(localStorage.getItem("currentCity"));
 
@@ -44,8 +45,13 @@ function initWeather() {
     }
 }
 
-// This function saves the city array to local storage
+// Function saves the city array to localstorage
 function storeCityArray() {
     localStorage.setItem("cities", JSON.stringify(cityList));
     }
 
+// function saves currently display city to localstorage
+function storeCurrentCity() {
+
+    localStorage.setItem("currentCity", JSON.stringify(cityname));
+}
