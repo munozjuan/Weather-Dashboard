@@ -32,3 +32,20 @@ function initCityList() {
     renderCities();
     }
 
+// This function pull the current city into local storage to display the current weather forecast on reload
+function initWeather() {
+    var storedWeather = JSON.parse(localStorage.getItem("currentCity"));
+
+    if (storedWeather !== null) {
+        cityname = storedWeather;
+
+        displayWeather();
+        displayFiveDayForecast();
+    }
+}
+
+// This function saves the city array to local storage
+function storeCityArray() {
+    localStorage.setItem("cities", JSON.stringify(cityList));
+    }
+
