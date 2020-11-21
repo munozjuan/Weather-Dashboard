@@ -55,3 +55,25 @@ function storeCurrentCity() {
 
     localStorage.setItem("currentCity", JSON.stringify(cityname));
 }
+
+// Click event handler for city search button
+$("#citySearchBtn").on("click", function(event){
+    event.preventDefault();
+
+    cityname = $("#cityInput").val().trim();
+    if(cityname === ""){
+        alert("Please enter a city to look up")
+
+    }else if (cityList.length >= 5){  
+        cityList.shift();
+        cityList.push(cityname);
+
+    }else{
+    cityList.push(cityname);
+    }
+    storeCurrentCity();
+    storeCityArray();
+    renderCities();
+    displayWeather();
+    displayFiveDayForecast();
+});
