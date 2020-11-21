@@ -41,3 +41,25 @@ h3, h4, h5{
   padding: 5px;
   color: black;
 }
+
+.vhigh{
+  border-radius: 6px;
+  background-color: red;
+  padding: 5px;
+  color: white;
+}
+
+.extreme{
+  border-radius: 6px;
+  background-color: violet;
+  padding: 5px;
+  color: white;
+}
+
+.searchCol{
+  height: 100vh;
+  background-color: whitesmoke;
+  padding-top: 1rem;
+  padding-right: 2rem;
+  margin-right: -1rem;
+}
