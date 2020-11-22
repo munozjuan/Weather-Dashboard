@@ -6,7 +6,7 @@
 
  
 
->A simple calendar application that allows a user to save events for each hour of the day by modifying starter code
+> An application that allows a user to input city names to get the current forcast as well as five day forcast. travelers are able to look up multiple cities to that they can plan a trip accordingly. 
 
  
 --- 
@@ -31,7 +31,7 @@
 ## Description  
 
  
--  This calendar application allows the user to input information. It then allows the user to save information for every hour. I used Moment.js to work with dates and times. I want to manage my time effectively, as an employee with a hectic schedule, I want to add importan events to my daily planner; so, I made this application to facilitate that. 
+-  The application allows the user to input city names to get the current forcast as well a five day forcast. Use a third-party api that will allow to access their data and functionality.
  
 
 #### Technologies 
@@ -42,7 +42,7 @@
 
 - CSS
 
-- moment.js
+- Weather API
 
 - JavaScript
 
@@ -93,7 +93,7 @@
  
 
 - Website - [JuanMunoz]( https://github.com/munozjuan) 
--link - [Code](https://github.com/munozjuan/Work-Day-Scheduler/)
+-link - [Code](https://github.com/munozjuan/Weather-Dashboard/)
 
  
 
