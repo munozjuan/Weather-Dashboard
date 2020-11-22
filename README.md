@@ -1,7 +1,7 @@
 # Weather-Dashboard
 # Juan Munoz
 
-![scheduler](/images/ima.png) 
+![weather](/image/ima.png) 
 
 
  
